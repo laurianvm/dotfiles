@@ -24,9 +24,6 @@ function link_from_home {   #link_from_home (dotfile, prefix)
 for file in bash_profile bashrc bash_aliases vim vim/vimrc gitignore; do
   link_from_home $file "."  # the original dotfiles
 done
-for file in Templates; do
-  link_from_home $file      # no . prefix for these
-done
 
 echo "Done."
 
